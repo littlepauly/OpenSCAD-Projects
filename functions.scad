@@ -69,3 +69,16 @@ module rect_round(length,width,depth,rad) {
     }
 
 
+// Auto generates a place holder for a hex nut from the length and thickness, where length is the distance between parallel faces.
+
+module hex_nut_cutout(length, thickness) {
+   
+   hex_side_length = length / sqrt(3);
+
+   union(){
+      cube([hex_side_length,thickness,length], center=true);
+      rotate([0,60,0]){cube([hex_side_length,thickness,length], center=true);}
+      rotate([0,120,0]){cube([hex_side_length,thickness,length], center=true);}
+   }
+}
+
