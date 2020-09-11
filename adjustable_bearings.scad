@@ -5,7 +5,7 @@ or = 11;             // outer radius
 ir = 4;              // inner radius
 d  = 7;           // depth
 
-ff = 0.01;           // fudge factor to seperate bearings from race. Default 0.5% 
+ff = 0.005;           // fudge factor to seperate bearings from race. Default 0.5% 
 
 // CALCULATED PARAMETERS
 cr = (or + ir)/2;    // centre radius
