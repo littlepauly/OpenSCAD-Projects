@@ -10,7 +10,7 @@ cor_rad = 1.5;
 dep = 10;
 
 rotate_extrude(angle = 360){
-translate([ rad, 0 ,0]){
+translate([ rad+cor_rad, 0 ,0]){
 
 // Cross Section
 projection(){
