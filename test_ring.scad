@@ -5,9 +5,9 @@ use <functions.scad>
 $fa=.5; // default minimum facet angle is now 0.5 deg
 $fs=.5; // default minimum facet size is now 0.5 mm
 
-rad = 22;
+rad = 23;
 cor_rad = 1.5;
-dep = 10;
+dep = 7.5;
 
 rotate_extrude(angle = 360){
 translate([ rad+cor_rad, 0 ,0]){
